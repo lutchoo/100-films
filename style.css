@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+    
+.backgroundimage {
+    width: 100%;
+    height: 90vh; 
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;    
+}
+
+#bouton{
+    display: flex;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.affiche{
+    width: 200px;
+    margin-left: 15px;
+    padding-top: 45px;
+}
+.info{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-left: 25px; 
+}
+.content{
+    display: flex;
+}
+.synopsis {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    padding-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.acteur {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    background-color:black;
+    opacity: 70%;
+}
+.boitefin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#jackette{
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+}
+.boite{
+    width: 30%;
+    text-align: center;
+    padding-top: 55px;
+}
+#titresynopsis{
+    font-size: 2em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: underline;
+    font-family: 'Faster One',cursive;
+}
+h1{
+    font-size: 2rem;
+    font-family: 'Faster One',cursive;
+    padding-bottom: 15px;
+    color: black;
+}
+h2{
+    padding: 10px;
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+h3{
+    padding-top: 30px;
+    color: goldenrod;
+}
+
+/* ticket de cinema */
+
+.cardWrap {
+  width: 27em;
+  margin: 3em auto;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.card {
+  background: linear-gradient(to bottom, goldenrod 0%, white 26%, white 26%, lightgrey 100%);
+  height: 11em;
+  float: left;
+  position: relative;
+  padding: 1em;
+  margin-top: 100px;
+}
+
+.cardLeft {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 16em;
+}
+
+.cardRight {
+  width: 6.5em;
+  border-left: .18em dashed black;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: .9em;
+    height: .9em;
+    background: #fff;
+    border-radius: 50%;
+    left: -.5em;
+  }
+  &:before {
+    top: -.4em;
+  }
+  &:after {
+  bottom: -.4em;
+  }
+}
+
+
+
+.title, .name {
+  text-transform: uppercase;
+  font-weight: normal;
+  h2 {
+    font-size: .9em;
+    color: #525252;
+    margin: 0;
+   }
+  span {
+    font-size: .7em;
+    color: black;
+  }
+}
+span{
+    color: black;
+}
+
+.name{
+  margin: .7em 0 0 0;
+}
+
+.eye {
+  position: relative;
+  width: 3em;
+  height: 2.5em;
+  background-image: url(icons/9-90822_the-gallery-for-film-projector-png-film-clipart-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  z-index: 1;
+  &:before, &:after {
+    content:"";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+  }
+  &:before {
+    width: 1em;
+    height: 1em;
+    background: rgb(15, 14, 14);
+    z-index: 2;
+    left: 8px;
+    top: 4px;
+  }
+  &:after {
+  width: .5em;
+  height: .5em;
+  background: #fff;
+  z-index: 3;
+  left: 12px;
+  top: 8px;
+  }
+}
+
+.number {
+  text-align: center;
+  text-transform: uppercase;
+  h3 {
+    margin: .9em 0 0 0;
+    font-size: 2.5em; 
+  } 
+}
+
+.barcode {
+  height: 2em;
+  width: 0;
+  margin: 1.2em 0 0 .8em;
+  box-shadow: 1px 0 0 1px black,
+  5px 0 0 1px black,
+  10px 0 0 1px black,
+  11px 0 0 1px black,
+  15px 0 0 1px black,
+  18px 0 0 1px black,
+  22px 0 0 1px black,
+  23px 0 0 1px black,
+  26px 0 0 1px black,
+  30px 0 0 1px black,
+  35px 0 0 1px black,
+  37px 0 0 1px black,
+  41px 0 0 1px black,
+  44px 0 0 1px black,
+  47px 0 0 1px black,
+  51px 0 0 1px black,
+  56px 0 0 1px black,
+  59px 0 0 1px black,
+  64px 0 0 1px black,
+  68px 0 0 1px black,
+  72px 0 0 1px black,
+  74px 0 0 1px black,
+  77px 0 0 1px black,
+  81px 0 0 1px black;
+}
+
+    
+
+p{
+    font-size: 1.2rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* bouton retour */
+a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 25px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: goldenrod;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+a:hover{
+    background: goldenrod;
+    color: #050801;
+    box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod, 0 0 200px goldenrod;
+    
+}
+
+a span{
+    display: block;
+    position: absolute;
+}
+
+a span:nth-child(1){
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFFF33);
+    animation: span_1 1s linear infinite;
+}
+
+@keyframes span_1 {
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: 0%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, goldenrod);
+    animation: span_2 1s linear 0.25s infinite;
+}
+
+@keyframes span_2 {
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, goldenrod);
+    animation: span_3 1s linear 0.50s infinite;
+}
+
+@keyframes span_3 {
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4){
+    bottom: 0%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, goldenrod);
+    animation: span_4 1s linear 0.75s infinite;
+}
+
+@keyframes span_4 {
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+
+
+
+

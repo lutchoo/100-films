@@ -1,0 +1,233 @@
+/*Importation des fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400&display=swap');
+
+/*Style global de la page*/
+
+html, body, header {
+    margin: 0;
+    padding: 0;
+}
+
+section, nav, main {
+    width: 80%;
+    margin: auto;
+}
+
+/*Style de la partie Inscription/Connexion */
+
+#inscriptionConnexion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#btn-inscription,
+#btn-connexion {
+    transition-duration: 0.5s;
+}
+#btn-inscription:hover,
+#btn-connexion:hover {
+    background-color: goldenrod;
+}
+
+#session_co {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Style du titre de la page*/
+
+#maintitle {
+    font-family: 'Faster One', cursive;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#maintitle span:first-child {
+    text-transform: uppercase;
+}
+
+#maintitle span:last-child {
+    color: goldenrod;
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*Style de la navigation*/
+
+#topNav ul {
+    font-size: 1.5rem;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 1rem 0;
+}
+
+#form-tri {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+#lien-quizz {
+    background-color: black;
+    border-width: 3px;
+    border-radius: 100px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+#lien-quizz:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+.selecteurs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+select, button {
+    font-family: 'Montserrat', sans-serif;
+    border-width: 3px;
+    border-radius: 100px;
+    border-color: goldenrod;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+select {
+    width: 100%;
+}
+#btn-appliquer {
+    width: 50%;
+    transition-duration: 0.5s;
+}
+
+#btn-appliquer:hover {
+    background-color: goldenrod;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Faster One', cursive;
+}
+
+/*Formulaire d'inscription/connexion*/
+
+#ul-li-unique {
+    width : 100%;
+}
+
+#form-inscriptionConnexion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Partie MAIN*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Fiche Film*/
+
+.filmzzz {
+    width: 280px;
+    height: 360px;
+    margin: auto;
+    opacity: 1;
+    margin-bottom : 10px;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Titre des fiches*/
+
+#infos-jackette {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.75);
+    opacity: 0;
+    transition: 1s;
+}
+
+#texte-jackette {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#titrefilm, #sortie {
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    color: goldenrod;
+    opacity: 0;
+    transition: 1s;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+}
+#sortie {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+#bouton-lienfiche {
+    width: 40%;
+    border-radius: 100px;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    opacity: 0;
+    transition: 1s;
+}
+#bouton-lienfiche:hover {
+    background-color: goldenrod;
+}
+    
+.filmzzz:hover #infos-jackette,
+.filmzzz:hover #titrefilm,
+.filmzzz:hover #sortie,
+.filmzzz:hover #bouton-lienfiche {
+    opacity: 1
+}
